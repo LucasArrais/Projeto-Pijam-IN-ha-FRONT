@@ -46,6 +46,11 @@ export default function Footer() {
       </div>
 
       <img   src="/imagens_footer/logo.png"   alt="Logo IN"   className={styles.footerLogo} />
+
+      <p className={styles.copyright}>
+        © Copyright 2026. IN Junior. Todos os direitos reservados. Niterói, Brasil.
+      </p>
+
     </footer>
   )
 }
