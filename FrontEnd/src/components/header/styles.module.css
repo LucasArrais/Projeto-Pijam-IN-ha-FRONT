@@ -10,3 +10,33 @@
   padding: 0 2rem;
   box-sizing: border-box;
 }
+
+
+.logo img {
+  height: 5rem;
+  max-width: 100%;
+  display: block;
+}
+
+
+.catalogo {
+  display: flex;
+  gap: 2rem;
+}
+.catalogo a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+.icons img {
+  height: 2.2rem;
+  max-width: 100%;
+  display: block;
+}
