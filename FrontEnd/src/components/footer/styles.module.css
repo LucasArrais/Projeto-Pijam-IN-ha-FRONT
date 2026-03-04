@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  color: whitesmoke;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+}
+
