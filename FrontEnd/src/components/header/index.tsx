@@ -14,6 +14,21 @@ export default function Header() {
         <a href="#">MASCULINO</a>
         <a href="#">INFANTIL</a>
       </div>
+
+      <div className={styles.icons}>
+        <a href="#">
+          <img src="/imagens_header/favoritos.png" alt="Favoritos" />
+        </a>
+
+        <a href="#">
+          <img src="/imagens_header/carrinho.png" alt="Carrinho" />
+        </a>
+
+        <a href="#">
+          <img src="/imagens_header/login.png" alt="Login" />
+        </a>
+      </div>
+
     </header>
   )
 }
