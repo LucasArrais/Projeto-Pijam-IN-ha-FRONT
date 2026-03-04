@@ -53,3 +53,35 @@
   height: 100%;
   display: block;
 }
+
+
+.mapa {
+  margin-left: auto;
+}
+.mapa iframe {
+  border: none;
+  margin-top: 1rem;
+}
+
+
+.footerLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: auto;
+}
+
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: teal;
+  color: whitesmoke;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+}
