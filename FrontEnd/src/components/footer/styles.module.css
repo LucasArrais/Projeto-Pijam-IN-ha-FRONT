@@ -10,3 +10,46 @@
   position: relative;
 }
 
+
+.textos_e_icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.endereco {
+  max-width: 300px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: black;
+  font-family: sans-serif, Arial;
+}
+.endereco h1 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: teal;
+}
+.endereco p {
+  font-size: 0.95rem;
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  margin-right: 50%;
+}
+.icons a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+.icons img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
