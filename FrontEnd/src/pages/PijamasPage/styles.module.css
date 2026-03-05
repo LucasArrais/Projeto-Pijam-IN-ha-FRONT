@@ -19,7 +19,7 @@
 }
 
 .searchbarAndLupa{
-    position: relative;
+    position:relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,6 +28,7 @@
     height: 45px;
     background-color: var(--white);
     border-radius: 50px;
+    -top: 20px;
 }
 .searchbarAndLupa input{
     flex: 1;
@@ -69,46 +70,4 @@
     padding-top: 42px;
     justify-content: center;
     align-items: center;
-}
-
-/*Estilização de cada Botão de filtro*/
-.expansionButton{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 312px;
-    height: 52.04px;
-    border-radius: 4px;
-    background-color: var(--blue-0);
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.27);
-
-    &:hover{
-        cursor: pointer;
-        background-color: #80a6b8;
-    }
-}
-.faixaEespecificacao{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 13.83px;
-}
-.h4{
-    font-family: var(--font-nunito);
-    font-size: 25px;
-    font-weight: 500;
-}
-.faixa{
-    width: 10px;
-    height: 52.02px;
-    background-color: var(--blue-200);
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-}
-.expansionArrow{
-    background-image: url(../../assets/pijamasPage/expand.svg);
-    background-size: cover;
-    width: 41px;
-    height: 41px;
 }

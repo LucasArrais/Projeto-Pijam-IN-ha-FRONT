@@ -1,57 +1,84 @@
 import styles from "./styles.module.css"
+import FilterButton from "../../components/FilterButton"
+import { useState } from "react"
 
 export default function PijamasPage() {
+    type FilterType = "gender" | "type" | "season"
+
+    const [openFilter, setOpenFilter] = useState<FilterType | null>(null)
+
+    function toggleFilter(filterName: FilterType) {
+        if (openFilter === filterName) {
+            setOpenFilter(null)
+        } else {
+            setOpenFilter(filterName)
+        }
+    }
+
     return (
         <>
         <div className={styles.background}>
+
             <section className={styles.searchAndFilters}>
+
                 <div className={styles.searchbarAndLupa}>
                     <input type="text" placeholder="Pesquise pelo produto..." />
                     <button className={styles.searchButton}></button>
                 </div>
-                
+
                 <div className={styles.filtersBox}>
                     
-                    <div className={styles.expansionButton}>
-                        <div className={styles.faixaEespecificacao}>
-                            <div className={styles.faixa}></div>
-                            <h4 className={styles.h4}>Gênero</h4>
-                        </div>
-                        <div className={styles.expansionArrow}></div>  
-                    </div>
-                    
-                    <div className={styles.expansionButton}>
-                        <div className={styles.faixaEespecificacao}>
-                                <div className={styles.faixa}></div>
-                                <h4 className={styles.h4}>Tipo</h4>
-                            </div>
-                            <div className={styles.expansionArrow}></div>
-                        </div>
-                    
-                    <div className={styles.expansionButton}>
-                        <div className={styles.faixaEespecificacao}>
-                                <div className={styles.faixa}></div>
-                                <h4 className={styles.h4}>Estação</h4>
-                            </div>
-                            <div className={styles.expansionArrow}></div>
-                        </div>
-                    </div>
+                    <FilterButton
+                        title="Gênero"
+                        isOpen={openFilter === "gender"}
+                        onToggle={() => toggleFilter("gender")}
+                        options={[
+                        { label: "Todos", link: "/pijamas" },
+                        { label: "Masculino", link: "/pijamas/filter?gender=MASCULINO" },
+                        { label: "Feminino", link: "/pijamas/filter?gender=FEMININO" },
+                        { label: "Unissex", link: "/pijamas/filter?gender=UNISSEX" }
+                        ]}
+                    />
+
+                    <FilterButton
+                        title="Tipo"
+                        isOpen={openFilter === "type"}
+                        onToggle={() => toggleFilter("type")}
+                        options={[
+                        { label: "Todos", link: "/pijamas" },
+                        { label: "Adulto", link: "/pijamas/filter?type=ADULTO" },
+                        { label: "Infantil", link: "/pijamas/filter?type=INFANTIL" }
+                        ]}
+                    />
+
+                    <FilterButton
+                        title="Estação"
+                        isOpen={openFilter === "season"}
+                        onToggle={() => toggleFilter("season")}
+                        options={[
+                        { label: "Todos", link: "/pijamas" },
+                        { label: "Verão", link: "/pijamas/filter?season=VERAO" },
+                        { label: "Inverno", link: "/pijamas/filter?season=INVERNO" }
+                        ]}
+                    />
+                            
+
+                </div>
             </section>
-                
+
             <section className={styles.pijmaDisplayAndPagination}>
-                    <div className={styles.pijamasDisplay}>
-                         
-                        <div className={styles.cardPijama}>
-                            <div></div>
-                        </div>
+                <div className={styles.pijamasDisplay}>
+
+                    <div className={styles.cardPijama}>
+                        <div></div>
                     </div>
 
-                    <div className={styles.pagination}>
+                </div>
 
-                    </div>
+                <div className={styles.pagination}></div>
             </section>
+
         </div>
-                
         </>
     )
 }

@@ -1,0 +1,86 @@
+/*Estilização de cada Botão de filtro*/
+.expansionButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 312px;
+    height: 52.04px;
+    border-radius: 4px;
+    background-color: var(--blue-0);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.27);
+
+
+    &:hover{
+        cursor: pointer;
+        background-color: #80a6b8;
+    }
+}
+.faixaEespecificacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 13.83px;
+}
+.h4{
+    font-family: var(--font-nunito);
+    font-size: 25px;
+    font-weight: 500;
+}
+.faixa{
+    width: 10px;
+    height: 52.02px;
+    background-color: var(--blue-200);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.expansionArrow{
+    background-image: url(../../assets/pijamasPage/expand.svg);
+    background-size: cover;
+    width: 41px;
+    height: 41px;
+}
+
+.expansionButtonEgaveta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    position: relative;
+}
+.gaveta{
+    position: absolute;
+    top: 100%;
+    width: 93.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #97C3D8;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 100;
+    
+}
+.barraDivisoria{
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--blue-200);
+}
+
+.Link{
+    display: block;
+    width: 100%;
+    font-family: var(--font-nunito);
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--black);
+    text-align: center;
+    padding: 2px 0 2px;
+    border-radius: 4px;
+
+    &:hover{
+        background-color: #b0e6ff;
+    }
+}
