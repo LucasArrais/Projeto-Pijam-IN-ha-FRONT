@@ -1,12 +1,21 @@
 import Header from './components/header'
 import Footer from './components/footer'
 
+import HomePage from './pages/HomePage'
+
 export default function App() {
   return (
     <>
-      <Header />
 
-      <Footer />
+      <header>
+        <Header />
+      </header>
+
+      <HomePage />
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

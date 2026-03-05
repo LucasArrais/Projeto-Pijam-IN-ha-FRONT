@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem 2rem;
-  background-color: #ffffff;
+  background-color: #FCF7F8;
   color: whitesmoke;
   flex-wrap: wrap;
   gap: 2rem;
@@ -69,7 +69,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
+  width: 18rem;
   height: auto;
 }
 
