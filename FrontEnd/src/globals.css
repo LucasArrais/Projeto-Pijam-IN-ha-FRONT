@@ -1,7 +1,39 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/*Definições de estilos básicos do figma, para pegar eles tem que usar var()!!!!!!, por exemplo:
+
+body{
+	font-family: var(--fonte-texto);
+	background-color: var(--vermelho-0) 
+}
+
+isso vai facilitar a não ter que ficar pegando o código da cor no figma ou ficar comparando com as cores que o próprio vs code recomenda conforme o desenvolvimento.*/
+:root{
+	/*tons de vermelho*/
+	--red-0: #ED8E96;
+	--red-100: #E06A73;
+	--red-200: #B82935;
+	--red-300: #A31621;
+	--red-400: #74010B;
+	--red-500: #3E0005;
+
+	/*tons de azul*/
+	--blue-0: #97C3D8;
+	--blue-100: #72A8C1;
+	--blue-200: #4E8098;
+	--blue-300: #3E677A;
+	--blue-400: #274553;
+
+	/*tons de cinza*/
+	--gray-0: #F5F8FF;
+	--gray-100: #CED3DC;
+	--gray-200: #A4A8B0;
+	--gray-300: #87888B;
+	--gray-400: #5F6165;
+
+	/*preto e branco*/
+	--black: #171717;
+	--white: #FCF7F8;
+
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
