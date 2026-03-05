@@ -9,11 +9,33 @@ export default function PijamasPage() {
                     <input type="text" placeholder="Pesquise pelo produto..." />
                     <button className={styles.searchButton}></button>
                 </div>
-                <div className={styles.filtersArea}>
-                    <button className={styles.genderButton}></button>
-                    <button className={styles.typeButton}></button>
-                    <button className={styles.seasonButton}></button>
-                </div>
+                
+                <div className={styles.filtersBox}>
+                    
+                    <div className={styles.expansionButton}>
+                        <div className={styles.faixaEespecificacao}>
+                            <div className={styles.faixa}></div>
+                            <h4 className={styles.h4}>Gênero</h4>
+                        </div>
+                        <div className={styles.expansionArrow}></div>  
+                    </div>
+                    
+                    <div className={styles.expansionButton}>
+                        <div className={styles.faixaEespecificacao}>
+                                <div className={styles.faixa}></div>
+                                <h4 className={styles.h4}>Tipo</h4>
+                            </div>
+                            <div className={styles.expansionArrow}></div>
+                        </div>
+                    
+                    <div className={styles.expansionButton}>
+                        <div className={styles.faixaEespecificacao}>
+                                <div className={styles.faixa}></div>
+                                <h4 className={styles.h4}>Estação</h4>
+                            </div>
+                            <div className={styles.expansionArrow}></div>
+                        </div>
+                    </div>
             </section>
                 
             <section className={styles.pijmaDisplayAndPagination}>
