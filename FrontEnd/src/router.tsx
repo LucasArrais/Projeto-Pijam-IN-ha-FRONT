@@ -28,7 +28,7 @@ const router = createBrowserRouter([
                 element: <LoginPage />
             },
             {
-                //path: "/exemplo"
+                path: "/pijama"
                 //element: <PageExmp /> 
             }
         ]

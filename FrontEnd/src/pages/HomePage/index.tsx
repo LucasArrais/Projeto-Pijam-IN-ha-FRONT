@@ -56,21 +56,21 @@ export default function HomePage() {
                 
                 <Swiper spaceBetween={80} slidesPerView={3}>
                     <SwiperSlide>
-                        <a href="#">
+                        <Link to="./pijama">
                             <img src="./imagens_homepage/mulher_pijama.svg" />
-                        </a>
+                        </Link>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <a href="#">
+                        <Link to="./pijama">
                             <img src="./imagens_homepage/mulher_pijama.svg" />
-                        </a>
+                        </Link>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <a href="#">
+                        <Link to="./pijama">
                             <img src="./imagens_homepage/mulher_pijama.svg"/>
-                        </a>
+                        </Link>
                     </SwiperSlide>
 
                 </Swiper>
