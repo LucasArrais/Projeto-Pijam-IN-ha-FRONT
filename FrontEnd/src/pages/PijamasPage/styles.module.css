@@ -52,8 +52,8 @@
     width: 58.58px;
     height: 58px;
     background-image: url("../../assets/pijamasPage/lupa.svg");
-    background-position: center;
-    background-size: cover;
+    background-position: 6px;
+    background-size: 90%;
     border: none;
     border-radius: 50px;
     background-color: var(--blue-400);
