@@ -5,7 +5,7 @@ export default function RegisterPage() {
         <>  
             <section className={styles.background}>
                 <div className={styles.redBox}>
-                    <h2>Registre-se</h2>
+                    <h2 className={styles.titulo}>Registre-se</h2>
 
                     <div className={styles.allInputs}>
                         <input type="text" placeholder="Nome"/>
@@ -15,7 +15,7 @@ export default function RegisterPage() {
                         <input type="password" placeholder="Confirmar senha"/>
                     </div>
 
-                    <button>REGISTRAR</button>
+                    <button className={styles.button}>REGISTRAR</button>
                 </div>
             </section>
         </>

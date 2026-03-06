@@ -1,0 +1,61 @@
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/backgrounds/backgroundZred.svg");
+    background-size: 120%;
+    background-position:center;
+}
+
+.redBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 521px;
+    height: 624px;
+    background-color: var(--red-400);
+    margin: 95px 0 71px;
+    border-radius: 5px;
+    box-shadow: hsla(0, 0%, 0%, 0.5);
+}
+.titulo{
+    font-family: var(--font-numans);
+    font-weight: 400;
+    font-size: 48px;
+    color: var(--white);
+}
+.allInputs{
+    position: block;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 52px 0 0px;
+}
+.allInputs input{
+    width: 335.65px;
+    height: 44px;
+    padding-left: 13.8px;
+    border-radius: 2px;
+    border: none;
+    color: hsla(0, 0%, 0%, 0.5);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    letter-spacing: 5%;
+}
+
+/*pegando estilização parcial do styles.module.css do FeedbackPage nesse boão de cadastro*/
+.button{
+    border: none;
+    box-shadow: hsla(0, 0%, 0%, 0.25);
+
+    &:hover{
+        cursor: pointer;
+        background-color: #b71a27;
+    }
+}
+
+
