@@ -1,21 +1,55 @@
 import styles from "./styles.module.css"
+import {useForm} from 'react-hook-form'
+import z from 'zod'
+
+const userSchema = z.object({
+    name: z.string().nonempty().regex(/^\D+$/, {message: '* Não pode ter números'}),
+    username: z.string().nonempty('* O usuário não pode ser vazio').refine(value => value.trim().length > 0, { message: '* Não pode ter espaços' }).regex(/^[a-zA-Z0-9]+$/, {message: '* Não pode ter acentos'}),
+    email: z.string().nonempty('* O E-mail não pode ser vazio').refine(value => z.string().safeParse(value).success, {message: '* O e-mail não é válido'}),
+    password: z.string().nonempty('Senha não pode ser vazia').min(6, "A senha deve ter no mínimo 6 caracteres").regex(/^\S+$/, "A senha Não pode conter espaços"),
+    confirmPassword: z.string().nonempty('A confirmação de senha não pode ser vazia')
+}).refine(data => data.password === data.confirmPassword, {
+    message: 'As senhas não cincidem',
+    path: ['confirmPassword']
+})
 
 export default function RegisterPage() {
+    const {register, handleSubmit, reset} = useForm()
+
+    
+    function createUser(data) {
+        console.log(data)
+        reset()
+    }
     return(
         <>  
             <section className={styles.background}>
-                <div className={styles.redBox}>
+                <div  className={styles.redBox}>
                     <h2 className={styles.titulo}>Registre-se</h2>
+                   
+                    <form onSubmit={handleSubmit(createUser)}>
+                        
+                        <div className={styles.allInputs}>
+                            <input type="text" placeholder="Nome"
+                            {...register('name')}
+                            />
+                            <input type="text" placeholder="Nome de Usuário"
+                            {...register('username')}
+                            />
+                            <input type="email" placeholder="E-mail" 
+                            {...register('email')}
+                            />
+                            <input type="password" placeholder="Senha"
+                            {...register('password')}
+                            />
+                            <input type="password" placeholder="Confirmar senha"
+                            {...register('confirmPassword')}
+                            />
+                        </div>
 
-                    <div className={styles.allInputs}>
-                        <input type="text" placeholder="Nome"/>
-                        <input type="text" placeholder="Nome de Usuário"/>
-                        <input type="email" placeholder="E-mail" />
-                        <input type="password" placeholder="Senha"/>
-                        <input type="password" placeholder="Confirmar senha"/>
-                    </div>
+                        <button className={styles.button}>REGISTRAR</button>
 
-                    <button className={styles.button}>REGISTRAR</button>
+                    </form> 
                 </div>
             </section>
         </>
