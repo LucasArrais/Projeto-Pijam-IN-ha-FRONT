@@ -28,8 +28,8 @@ const router = createBrowserRouter([
                 element: <LoginPage />
             },
             {
-                path: "/pijama"
-                //element: <PageExmp /> 
+                path: "pijama"
+                //element: <PijamaPage /> 
             }
         ]
     }
