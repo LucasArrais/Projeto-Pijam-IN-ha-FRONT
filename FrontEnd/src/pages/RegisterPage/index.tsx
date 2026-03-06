@@ -3,6 +3,7 @@ import {useForm} from 'react-hook-form'
 import z from 'zod'
 import {zodResolver} from '@hookform/resolvers/zod'
 import axios from 'axios'
+import { useNavigate } from "react-router-dom"
 
 const userSchema = z.object({
     name: z.string().nonempty('* Nome não pode ser vazio').regex(/^\D+$/, {message: '* Não pode ter números'}),
@@ -18,6 +19,8 @@ const userSchema = z.object({
 type User = z.infer<typeof userSchema>
 
 export default function RegisterPage() {
+    const navigate = useNavigate()
+
     const {register, handleSubmit, reset, formState: {errors, isSubmitting}, setError } = useForm<User>({
         resolver: zodResolver(userSchema)
     })
@@ -35,6 +38,8 @@ export default function RegisterPage() {
             
             console.log("Usuário criado com sucesso!")
             reset()
+
+            navigate('/login')
         } catch (error: any){
             if(error.response?.status === 409) {
                 setError('root', {
