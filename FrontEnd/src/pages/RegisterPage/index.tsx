@@ -17,14 +17,21 @@ const userSchema = z.object({
 type User = z.infer<typeof userSchema>
 
 export default function RegisterPage() {
-    const {register, handleSubmit, reset, formState: {errors, isSubmitting}} = useForm<User>({
+    const {register, handleSubmit, reset, formState: {errors, isSubmitting}, setError } = useForm<User>({
         resolver: zodResolver(userSchema)
     })
 
     
     function createUser(data: User) {
-        console.log(data)
-        reset()
+        try{
+            console.log(data)
+            throw new Error('Erro ao criar usuário')
+            reset()
+        } catch {
+            setError('root', {
+                message: "Erro ao criar usuário"
+            })
+        }
     }
     return(
         <>  
@@ -58,6 +65,7 @@ export default function RegisterPage() {
                         </div>
 
                         <button className={styles.button}>{isSubmitting ? 'CARREGANDO...' : 'REGISTRAR'}</button>
+                        {errors.root && <span>{errors.root.message}</span>}
 
                     </form> 
                 </div>
