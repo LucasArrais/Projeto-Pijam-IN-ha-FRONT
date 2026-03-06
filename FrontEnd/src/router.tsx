@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import FeedbackPage from "./pages/FeedbackPage";
 import LoginPage from "./pages/LoginPage";
 import RootLayout from "./RootLayout";
+import { UsersPage } from "./pages/UsersPage";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path: "login",
                 element: <LoginPage />
+            },
+            {
+                path: "users",
+                element: <UsersPage />
             },
             {
                 path: "cadastro",
