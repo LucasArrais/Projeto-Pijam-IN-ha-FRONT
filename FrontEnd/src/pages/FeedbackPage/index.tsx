@@ -4,7 +4,8 @@ export default function FeedbackPage() {
     return (
 
         <div className={styles.Container}>
-            
+            <div className={styles.FeedbackCard}>
+            </div>
         </div>
     )
 }
