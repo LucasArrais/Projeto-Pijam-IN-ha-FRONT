@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import FeedbackPage from "./pages/FeedbackPage";
 import LoginPage from "./pages/LoginPage";
 import RootLayout from "./RootLayout";
+import RegisterPage from "./pages/RegisterPage";
 
 const router = createBrowserRouter([
     {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "cadastro",
-                //element: <CadastroPage />
+                element: <RegisterPage />
             },
             {
                 path: "pijama"

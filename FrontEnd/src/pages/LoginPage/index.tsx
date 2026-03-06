@@ -14,7 +14,7 @@ export default function LoginPage() {
 
 
             <button className={styles.BotaoEntrar}>ENTRAR</button>
-            <Link className={styles.BotaoCadastro} to="./cadastro">CADASTRE-SE</Link>
+            <Link className={styles.BotaoCadastro} to="/cadastro">CADASTRE-SE</Link>
             </div>
         </div>
     )

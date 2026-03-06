@@ -17,15 +17,15 @@ export default function Header() {
       </div>
 
       <div className={styles.icons}>
-        <Link to="./favoritos">
+        <Link to="/favoritos">
           <img src="/imagens_header/favoritos.png" alt="Favoritos" />
         </Link>
 
-        <Link to="./carrinho">
+        <Link to="/carrinho">
           <img src="/imagens_header/carrinho.png" alt="Carrinho" />
         </Link>
 
-        <Link to="./login">
+        <Link to="/login">
           <img src="/imagens_header/login.png" alt="Login" />
         </Link>
       </div>

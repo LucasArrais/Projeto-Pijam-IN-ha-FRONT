@@ -56,19 +56,19 @@ export default function HomePage() {
                 
                 <Swiper spaceBetween={80} slidesPerView={3}>
                     <SwiperSlide>
-                        <Link to="./pijama">
+                        <Link to="/pijama">
                             <img src="./imagens_homepage/mulher_pijama.svg" />
                         </Link>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Link to="./pijama">
+                        <Link to="/pijama">
                             <img src="./imagens_homepage/mulher_pijama.svg" />
                         </Link>
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <Link to="./pijama">
+                        <Link to="/pijama">
                             <img src="./imagens_homepage/mulher_pijama.svg"/>
                         </Link>
                     </SwiperSlide>
@@ -176,7 +176,7 @@ export default function HomePage() {
 
                     </Swiper>
 
-                <Link to="./feedback" className={styles.BotaoFeedback}>
+                <Link to="/feedback" className={styles.BotaoFeedback}>
                     Também quero dar um feedback!
                 </Link>
 
