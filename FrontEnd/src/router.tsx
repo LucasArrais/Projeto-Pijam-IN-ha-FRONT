@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import PijamasPage from "./pages/PijamasPage";
 import HomePage from "./pages/HomePage";
+import FeedbackPage from "./pages/FeedbackPage";
 import RootLayout from "./RootLayout";
 
 const router = createBrowserRouter([
@@ -14,12 +15,12 @@ const router = createBrowserRouter([
 
             },
             {
-                path: "/pijamas",
+                path: "pijamas",
                 element: <PijamasPage />
             },
             {
-                //path: "/carrinho"
-                //element: <nome da função exportada da página carrinho>
+                path: "feedback",
+                element: <FeedbackPage />
             },
             {
                 //path: "/exemplo"
