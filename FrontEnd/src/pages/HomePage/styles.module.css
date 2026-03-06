@@ -20,3 +20,31 @@
     font-size: 2rem;
     font-style: italic;
 }
+
+.PromocaoNatalina img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+
+.PubliContainer {
+    display: flex;
+    justify-content: center;
+    gap: 18rem;
+}
+.Publi {
+    text-align: center;
+}
+.Publi img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10rem;
+}
+.Publi p {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-style: italic;
+    font-weight: 500;
+}
