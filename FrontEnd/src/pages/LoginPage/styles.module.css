@@ -47,3 +47,26 @@
     text-align: left;
 }
 
+.BotaoEntrar {
+    width: 80%;
+    max-width: 600px;
+    justify-self: center;
+    padding: 15px 0;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    background-color: #A31621;
+    color: #ffffff;
+    border: none;
+}
+
+.BotaoCadastro {
+    width: 80%;            
+    max-width: 600px;
+    justify-self: center;
+    padding: 15px 0;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    background-color: #A31621;
+    color: #ffffff;
+    border: none;
+}
