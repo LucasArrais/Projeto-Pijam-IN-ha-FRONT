@@ -2,6 +2,7 @@ import styles from './styles.module.css'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { Link } from 'react-router-dom';
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -175,9 +176,9 @@ export default function HomePage() {
 
                     </Swiper>
 
-                <a href="./pages/FeedbackPage" className={styles.BotaoFeedback}>
+                <Link to="./feedback" className={styles.BotaoFeedback}>
                     Também quero dar um feedback!
-                </a>
+                </Link>
 
             </div>
         </div>
