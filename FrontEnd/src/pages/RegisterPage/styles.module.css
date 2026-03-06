@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 521px;
+    min-width: 521px;
     height: 624px;
     background-color: var(--red-400);
     margin: 95px 0 71px;
@@ -27,12 +27,12 @@
     color: var(--white);
 }
 .allInputs{
-    position: block;
     display: flex;
     flex-direction: column;
-    gap: 16px;
     padding: 52px 0 0px;
+    gap: 16px;
 }
+
 .allInputs input{
     width: 335.65px;
     height: 44px;
@@ -56,6 +56,13 @@
         cursor: pointer;
         background-color: #b71a27;
     }
+}
+
+.span{
+    color: var(--white);
+    font-size: 15px;
+    display: block;
+    margin-top: 8px;
 }
 
 
