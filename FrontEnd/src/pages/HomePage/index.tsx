@@ -74,6 +74,98 @@ export default function HomePage() {
                 </Swiper>
 
             </div>
+                    <Swiper modules= {[Navigation]} navigation  spaceBetween={50}   slidesPerView={3}   loop={true}>
+
+                        <SwiperSlide>
+                            <div className={styles.CardFeedback}>
+
+                            <h3>Beltrano Souza</h3>
+
+                            <div className={styles.Estrela}>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>☆</span>
+                            </div>
+
+                            <p>
+                                Lorem ipsum dolor sit amet. Et voluptatem officia ad sint voluptate qui
+                                voluptas sunt non fugiat labore et consequatur voluptatem sed optio
+                                veniam aut perferendis delectus!
+                            </p>
+
+                            </div>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide>
+                            <div className={styles.CardFeedback}>
+
+                            <h3>Fulano da Silva</h3>
+
+                            <div className={styles.Estrela}>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>☆</span>
+                            </div>
+
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
+                                iste voluptatum perferendis architecto quas natus recusandae minus 
+                                autem nam nulla delectus nemo cum, maiores mollitia cupiditate provident optio iure ducimus!
+                            </p>
+
+                            </div>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide>
+                            <div className={styles.CardFeedback}>
+
+                            <h3>Ciclano Mendes</h3>
+
+                            <div className={styles.Estrela}>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </div>
+
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Blanditiis odio iste adipisci eos asperiores! Asperiores repellat, vel veniam dolorum,
+                                iste, mollitia voluptatum vero cumque iusto laboriosam nam enim? Eum, veritatis!
+                            </p>
+
+                            </div>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide>
+                            <div className={styles.CardFeedback}>
+
+                            <h3>Chiquinho Bahia</h3>
+
+                            <div className={styles.Estrela}>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </div>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, officiis explicabo sunt quas, veniam, repellat necessitatibus deserunt rerum voluptatibus magnam cumque voluptatum aperiam aliquam itaque natus accusamus sint ratione obcaecati.
+                            </p>
+
+                            </div>
+                        </SwiperSlide>
+
+                    </Swiper>
             </div>
         </div>
     )
