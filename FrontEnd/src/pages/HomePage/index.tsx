@@ -46,6 +46,34 @@ export default function HomePage() {
                 </div>
 
             </div>
+
+
+            <div className={styles.UltimasPromocoes}>
+
+                <h2>Nossas últimas promoções!</h2>
+                
+                <Swiper spaceBetween={80} slidesPerView={3}>
+                    <SwiperSlide>
+                        <a href="#">
+                            <img src="./imagens_homepage/mulher_pijama.svg" />
+                        </a>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <a href="#">
+                            <img src="./imagens_homepage/mulher_pijama.svg" />
+                        </a>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <a href="#">
+                            <img src="./imagens_homepage/mulher_pijama.svg"/>
+                        </a>
+                    </SwiperSlide>
+
+                </Swiper>
+
+            </div>
             </div>
         </div>
     )
