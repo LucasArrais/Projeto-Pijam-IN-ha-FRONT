@@ -1,6 +1,7 @@
 import styles from "./styles.module.css"
 import {useForm} from 'react-hook-form'
 import z from 'zod'
+import {zodResolver} from '@hookform/resolvers/zod'
 
 const userSchema = z.object({
     name: z.string().nonempty().regex(/^\D+$/, {message: '* Não pode ter números'}),
@@ -13,11 +14,15 @@ const userSchema = z.object({
     path: ['confirmPassword']
 })
 
+type User = z.infer<typeof userSchema>
+
 export default function RegisterPage() {
-    const {register, handleSubmit, reset} = useForm()
+    const {register, handleSubmit, reset, formState: {errors, isSubmitting}} = useForm<User>({
+        resolver: zodResolver(userSchema)
+    })
 
     
-    function createUser(data) {
+    function createUser(data: User) {
         console.log(data)
         reset()
     }
@@ -33,21 +38,26 @@ export default function RegisterPage() {
                             <input type="text" placeholder="Nome"
                             {...register('name')}
                             />
+                            {errors.name && <span>{errors.name.message}</span>}
                             <input type="text" placeholder="Nome de Usuário"
                             {...register('username')}
                             />
+                            {errors.username && <span>{errors.username.message}</span>}
                             <input type="email" placeholder="E-mail" 
                             {...register('email')}
                             />
+                            {errors.email && <span>{errors.email.message}</span>}
                             <input type="password" placeholder="Senha"
                             {...register('password')}
                             />
+                            {errors.password && <span>{errors.password.message}</span>}
                             <input type="password" placeholder="Confirmar senha"
                             {...register('confirmPassword')}
                             />
+                            {errors.confirmPassword && <span>{errors.confirmPassword.message}</span>}
                         </div>
 
-                        <button className={styles.button}>REGISTRAR</button>
+                        <button className={styles.button}>{isSubmitting ? 'CARREGANDO...' : 'REGISTRAR'}</button>
 
                     </form> 
                 </div>
