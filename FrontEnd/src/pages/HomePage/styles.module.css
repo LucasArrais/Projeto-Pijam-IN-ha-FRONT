@@ -2,3 +2,21 @@
     font-family: 'Montserrat', 'Numans', 'Nunito Sans', 'Roboto serif', 'Playball';
 }
 
+
+.Slogan {
+    text-align: center;
+    color: #274553;
+    background-color: #4E8098;
+}
+.Logo {
+    margin-top: 2.5rem;
+    font-family: 'Nunito Sans';
+}
+.Slogan h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.Slogan p {
+    font-size: 2rem;
+    font-style: italic;
+}
