@@ -48,6 +48,8 @@
 }
 
 .BotaoEntrar {
+    display: flex;
+    justify-content: center;
     width: 80%;
     max-width: 600px;
     justify-self: center;
@@ -57,16 +59,30 @@
     background-color: #A31621;
     color: #ffffff;
     border: none;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #b71a27;
+    }
 }
 
 .BotaoCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 80%;            
     max-width: 600px;
     justify-self: center;
-    padding: 15px 0;
     font-size: 1.8rem;
     border-radius: 10px;
     background-color: #A31621;
     color: #ffffff;
     border: none;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #b71a27;
+    }
 }
