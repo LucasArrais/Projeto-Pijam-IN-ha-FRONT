@@ -7,7 +7,7 @@
     margin: 5rem auto;
 
     background-color: #74010B;
-    width: 45rem;
+    width: 40rem;
     padding: 40px;
     justify-content: center;
 
@@ -25,13 +25,13 @@
     display: grid;
     margin-top: 2rem;
     font-family: 'Roboto-Serif';
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #ffffff;
-    justify-content: center;
+    text-align: center;
 }
 .FeedbackCard textarea {
     border-color: inherit;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: white;
     resize: none;
 
@@ -45,11 +45,11 @@
 .NomeCompleto {
     margin-top: 2rem;
     width: 400px;
-    height: 50px;
+    height: 40px;
 }
 .NomeCompleto::placeholder {
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .DescricaoDetalhada {
