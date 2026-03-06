@@ -106,3 +106,27 @@
     line-height: 1.6;
 }
 
+
+.Feedback h2 {
+    font-size: 3rem;
+    margin: 5rem 5rem;
+    color: #74010B;
+    font-family: 'Numans';
+}
+.BotaoFeedback {
+  width: 50rem;
+  height: 5rem;
+
+  color: whitesmoke;
+  font-size: 2.5rem;
+  background-color: #4E8098;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5rem auto;
+
+  text-decoration: none;
+  border-radius: 5px;
+}
