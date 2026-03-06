@@ -12,3 +12,38 @@
     padding: 40px;
     justify-content: center;
 }
+.LoginCard h1{
+    font-family:'Numans';
+    display: grid;
+    margin-top: 2rem;
+    font-size: 5rem;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.LoginCard p {
+    display: grid;
+    margin-top: 1.5rem;
+    font-family: 'Roboto-Serif';
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.LoginCard textarea {
+    font-family: 'Roboto';
+    border-color: inherit;
+    border-radius: 15px;
+    background-color: white;
+    resize: none;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-top: 50px;
+ 
+}
+.LoginCard textarea::placeholder{
+    font-size: 30px;
+    text-align: left;
+}
+
