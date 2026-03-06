@@ -2,6 +2,7 @@ import styles from "./styles.module.css"
 import {useForm} from 'react-hook-form'
 import z from 'zod'
 import {zodResolver} from '@hookform/resolvers/zod'
+import axios from 'axios'
 
 const userSchema = z.object({
     name: z.string().nonempty().regex(/^\D+$/, {message: '* Não pode ter números'}),
@@ -22,15 +23,28 @@ export default function RegisterPage() {
     })
 
     
-    function createUser(data: User) {
+    async function createUser(data: User) {
         try{
-            console.log(data)
-            throw new Error('Erro ao criar usuário')
+            const sendCreateUserRequest = {
+                name: data.name,
+                username: data.username,
+                email: data.email,
+                password: data.password
+            };
+            await axios.post('http://localhost:3333/users/', sendCreateUserRequest);
+            
+            console.log("Usuário criado com sucesso!")
             reset()
-        } catch {
-            setError('root', {
-                message: "Erro ao criar usuário"
-            })
+        } catch (error: any){
+            if(error.response?.status === 409) {
+                setError('root', {
+                    message: "E-mail ou username já cadastrado."
+                });
+            }else{
+                setError('root', {
+                    message: "Erro ao criar usuário."
+                })
+            }
         }
     }
     return(
