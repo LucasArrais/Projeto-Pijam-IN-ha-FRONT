@@ -1,5 +1,11 @@
-.Container {
-    font-family: 'Numans';
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/backgrounds/backgroundZred.svg");
+    background-size: 120%;
+    background-position:center;
 }
 
 .LoginCard {
@@ -12,14 +18,14 @@
     padding: 40px;
     justify-content: center;
 }
-.LoginCard h1{
-    font-family:'Numans';
-    display: grid;
+.LoginCard h2{
+    font-family: var(--font-numans);
     margin-top: 2rem;
-    font-size: 5rem;
-    color: #ffffff;
-    justify-content: center;
-    align-items: center;
+    font-size: 58px;
+    font-weight: 400;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 4%;
 }
 .LoginCard p {
     display: grid;
