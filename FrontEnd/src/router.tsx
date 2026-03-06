@@ -28,6 +28,10 @@ const router = createBrowserRouter([
                 element: <LoginPage />
             },
             {
+                path: "cadastro",
+                //element: <CadastroPage />
+            },
+            {
                 path: "pijama"
                 //element: <PijamaPage /> 
             }

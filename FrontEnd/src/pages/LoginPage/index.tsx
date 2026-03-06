@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styles from "./styles.module.css"
 
 export default function LoginPage() {
@@ -13,7 +14,7 @@ export default function LoginPage() {
 
 
             <button className={styles.BotaoEntrar}>ENTRAR</button>
-            <button className={styles.BotaoCadastro}>CADASTRE-SE</button>
+            <Link className={styles.BotaoCadastro} to="./">CADASTRE-SE</Link>
             </div>
         </div>
     )
