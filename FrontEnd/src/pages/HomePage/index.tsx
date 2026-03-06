@@ -9,6 +9,15 @@ import "swiper/css/navigation";
 export default function HomePage() {
     return (
         <div className={styles.Container}>
+            
+
+            <div className={styles.Slogan}>
+
+                <img className={styles.Logo} src="./imagens_homepage/logo.svg"  alt="Logo Pijam {IN} ha" />
+
+                <p>Se os lobos soubessem desse conforto, <br/>
+                    nem sompravam casas, iam dormir!</p>
+            </div>
         </div>
     )
 }
