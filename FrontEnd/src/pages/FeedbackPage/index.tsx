@@ -9,8 +9,8 @@ export default function FeedbackPage() {
 
                 <p>Fale um pouco sobre a sua <br/> experiência com a nossa loja!</p>
 
-                <textarea className={styles.NomeCompleto} placeholder="Nome Completo"     readOnly/>
-                <textarea className={styles.DescricaoDetalhada} placeholder="Descrição Detalhada"     readOnly/>
+                <textarea className={styles.NomeCompleto} placeholder="Nome Completo"     />
+                <textarea className={styles.DescricaoDetalhada} placeholder="Descrição Detalhada"     />
 
                 <button>ENVIAR</button>
             </div>
