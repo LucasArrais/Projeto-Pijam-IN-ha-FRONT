@@ -175,7 +175,7 @@ export default function HomePage() {
 
                     </Swiper>
 
-                <a href="/pages/#" className={styles.BotaoFeedback}>
+                <a href="/pages/FeedbackPage" className={styles.BotaoFeedback}>
                     Também quero dar um feedback!
                 </a>
 
