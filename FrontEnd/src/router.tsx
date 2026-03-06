@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import PijamasPage from "./pages/PijamasPage";
 import HomePage from "./pages/HomePage";
 import FeedbackPage from "./pages/FeedbackPage";
+import LoginPage from "./pages/LoginPage";
 import RootLayout from "./RootLayout";
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: "feedback",
                 element: <FeedbackPage />
+            },
+            {
+                path: "login",
+                element: <LoginPage />
             },
             {
                 //path: "/exemplo"
