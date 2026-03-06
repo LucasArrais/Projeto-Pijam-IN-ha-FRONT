@@ -6,6 +6,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
+
 export default function HomePage() {
     return (
         <div className={styles.Container}>
@@ -74,6 +75,13 @@ export default function HomePage() {
                 </Swiper>
 
             </div>
+
+
+            <div className={styles.Feedback}>
+
+                <h2>Feedbacks</h2>
+
+
                     <Swiper modules= {[Navigation]} navigation  spaceBetween={50}   slidesPerView={3}   loop={true}>
 
                         <SwiperSlide>
@@ -166,6 +174,11 @@ export default function HomePage() {
                         </SwiperSlide>
 
                     </Swiper>
+
+                <a href="/pages/#" className={styles.BotaoFeedback}>
+                    Também quero dar um feedback!
+                </a>
+
             </div>
         </div>
     )
