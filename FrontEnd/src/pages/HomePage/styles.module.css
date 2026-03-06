@@ -48,3 +48,14 @@
     font-style: italic;
     font-weight: 500;
 }
+
+
+.UltimasPromocoes h2 {
+    font-size: 3rem;
+    margin-left: 5rem;
+    margin-top: 10rem;
+    color: #74010B;
+    font-family: 'Numans';
+    margin-bottom: 3rem;
+}
+
