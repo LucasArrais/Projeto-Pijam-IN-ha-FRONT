@@ -18,6 +18,11 @@ export default function HomePage() {
                 <p>Se os lobos soubessem desse conforto, <br/>
                     nem sompravam casas, iam dormir!</p>
             </div>
+
+
+            <div className={styles.PromocaoNatalina}>
+                <img src="./imagens_homepage/banner.svg"    alt="Promoção de Natal" />
+            </div>
         </div>
     )
 }
