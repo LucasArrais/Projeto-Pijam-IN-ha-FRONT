@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import PijamasPage from "./pages/PijamasPage";
+import HomePage from "./pages/HomePage";
 import RootLayout from "./RootLayout";
 
 const router = createBrowserRouter([
@@ -8,9 +9,9 @@ const router = createBrowserRouter([
         element: <RootLayout />,
         children: [
             {
-                //nosso site vai se iniciar pela home, quando fizer a home, descomenta isso para funcionar a rota.
-                //index: true,
-                //element: <Home /> --nao esqueça de importar a funçao e nome deve ser igual a do index.tsx da HomePage
+                index: true,
+                element: <HomePage />
+
             },
             {
                 path: "/pijamas",
