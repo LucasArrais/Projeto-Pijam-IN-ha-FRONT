@@ -6,21 +6,25 @@ export default function LoginPage() {
         <div className={styles.background}>
             
             <div className={styles.LoginCard}>
-                <h2>Login</h2>
+                <div className={styles.tituloEmerchan}>
+                    <h2>Login</h2>
 
-                <p>Faça login para ter acesso ao <br/> pijama dos seus <span className={styles.sonhosStyle}>sonhos!</span></p>
-
-                <div className={styles.inputEspan}>
-                    <input className={styles.UsuarioEmail} placeholder="Usuário ou E-mail" />
+                    <p>Faça login para ter acesso ao <br/> pijama dos seus <span className={styles.sonhosStyle}>sonhos!</span></p>
                 </div>
                 
+
                 <div className={styles.inputEspan}>
+                    <input className={styles.input} placeholder="Usuário ou E-mail" />
+                </div>
+                
+                <div className={styles.input}>
                     <input className={styles.Senha} placeholder="Senha" />
                 </div>
-                
-
-
+                <a href="" className={styles.forgotPassword}>Esqueci minha senha</a>
+              
             <button className={styles.BotaoEntrar}>ENTRAR</button>
+            <div className={styles.whiteBar}></div>
+
             <Link className={styles.BotaoCadastro} to="cadastro">CADASTRE-SE</Link>
             </div>
             

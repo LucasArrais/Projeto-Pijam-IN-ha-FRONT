@@ -7,7 +7,12 @@
     background-size: 120%;
     background-position:center;
 }
-
+.tituloEmerchan{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    padding-bottom: 32px;
+}
 .LoginCard {
     display: flex;
     flex-direction: column;
@@ -54,6 +59,19 @@
     resize: none;
     font-size: 20px;
     padding-left: 20px;
+    margin: 12.5px 0 12.5px;
+}
+
+.forgotPassword{
+    display: flex;
+    align-self: start;
+    padding-left: 40px;
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 5%;
+    text-decoration: underline;
+    color: var(--red-0);
 }
 
 .BotaoEntrar {
