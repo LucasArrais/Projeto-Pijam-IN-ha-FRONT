@@ -70,7 +70,64 @@ export default function PijamasPage() {
                 <div className={styles.pijamasDisplay}>
 
                     <div className={styles.cardPijama}>
-                        <div></div>
+                        <img src="public/imagens_pijamas/Front view of a young lady in pajamas staying in bed.png" alt="" />
+                        <p className={styles.descriçãoPijama}>Pijama feminino longo - estampa poá</p>
+                        <p className={styles.price}>R$ 78,90</p>
+                        <p className={styles.parcelamento}>6x de R$13,15</p>
+                    </div>
+                    <div className={styles.cardPijama}>
+                        <img src="public/imagens_pijamas/Front view of a young lady in pajamas staying in bed.png" alt="" />
+                        <p className={styles.descriçãoPijama}>Pijama feminino longo - estampa poá</p>
+                        <p className={styles.price}>R$ 78,90</p>
+                        <p className={styles.parcelamento}>6x de R$13,15</p>
+                    </div>
+                    <div className={styles.cardPijama}>
+                        <img src="public/imagens_pijamas/Front view of a young lady in pajamas staying in bed.png" alt="" />
+                        <p className={styles.descriçãoPijama}>Pijama feminino longo - estampa poá</p>
+                        <p className={styles.price}>R$ 78,90</p>
+                        <p className={styles.parcelamento}>6x de R$13,15</p>
+                    </div>
+                    <div className={styles.cardPijama}>
+                        <img src="public/imagens_pijamas/Front view of a young lady in pajamas staying in bed.png" alt="" />
+                        <p className={styles.descriçãoPijama}>Pijama feminino longo - estampa poá</p>
+                        <p className={styles.price}>R$ 78,90</p>
+                        <p className={styles.parcelamento}>6x de R$13,15</p>
+                    </div>
+                    <div className={styles.cardPijama}>
+                        <img src="public/imagens_pijamas/Front view of a young lady in pajamas staying in bed.png" alt="" />
+                        <p className={styles.descriçãoPijama}>Pijama feminino longo - estampa poá</p>
+                        <p className={styles.price}>R$ 78,90</p>
+                        <p className={styles.parcelamento}>6x de R$13,15</p>
+                    </div>
+                    <div className={styles.cardPijama}>
+                        <img src="public/imagens_pijamas/Front view of a young lady in pajamas staying in bed.png" alt="" />
+                        <p className={styles.descriçãoPijama}>Pijama feminino longo - estampa poá</p>
+                        <p className={styles.price}>R$ 78,90</p>
+                        <p className={styles.parcelamento}>6x de R$13,15</p>
+                    </div>
+                    <div className={styles.cardPijama}>
+                        <img src="public/imagens_pijamas/Front view of a young lady in pajamas staying in bed.png" alt="" />
+                        <p className={styles.descriçãoPijama}>Pijama feminino longo - estampa poá</p>
+                        <p className={styles.price}>R$ 78,90</p>
+                        <p className={styles.parcelamento}>6x de R$13,15</p>
+                    </div>
+                    <div className={styles.cardPijama}>
+                        <img src="public/imagens_pijamas/Front view of a young lady in pajamas staying in bed.png" alt="" />
+                        <p className={styles.descriçãoPijama}>Pijama feminino longo - estampa poá</p>
+                        <p className={styles.price}>R$ 78,90</p>
+                        <p className={styles.parcelamento}>6x de R$13,15</p>
+                    </div>
+                    <div className={styles.cardPijama}>
+                        <img src="public/imagens_pijamas/Front view of a young lady in pajamas staying in bed.png" alt="" />
+                        <p className={styles.descriçãoPijama}>Pijama feminino longo - estampa poá</p>
+                        <p className={styles.price}>R$ 78,90</p>
+                        <p className={styles.parcelamento}>6x de R$13,15</p>
+                    </div>
+                    <div className={styles.cardPijama}>
+                        <img src="public/imagens_pijamas/Front view of a young lady in pajamas staying in bed.png" alt="" />
+                        <p className={styles.descriçãoPijama}>Pijama feminino longo - estampa poá</p>
+                        <p className={styles.price}>R$ 78,90</p>
+                        <p className={styles.parcelamento}>6x de R$13,15</p>
                     </div>
 
                 </div>

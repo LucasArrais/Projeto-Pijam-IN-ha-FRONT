@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Numans&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Numans&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
 .background{
     width: 100%;
     height: auto;
@@ -30,6 +34,7 @@
     border-radius: 50px;
     -top: 20px;
 }
+
 .searchbarAndLupa input{
     flex: 1;
     width: 100%;
@@ -43,11 +48,13 @@
     color: var(--black);
     background-color: transparent;
 }
+
 .searchbarAndLupa input:focus, select:focus{
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 }
+
 .searchButton{
     width: 58.58px;
     height: 58px;
@@ -70,4 +77,46 @@
     padding-top: 42px;
     justify-content: center;
     align-items: center;
+}
+
+.pijamasDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px 20px 40px;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 70px;
+}
+
+.cardPijama{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #97C3D8;
+    box-shadow: 10px 10px 27px grey;
+    justify-content: space-between;
+    width: 408px;
+    height: 837px;
+}
+
+.descriçãoPijama{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Numans';
+}
+
+.price{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Nunito Sans';
+}
+
+.parcelamento{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Nunito Sans';
+    margin-bottom: 30px;
 }
