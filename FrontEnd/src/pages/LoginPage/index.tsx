@@ -21,11 +21,14 @@ export default function LoginPage() {
                     <input className={styles.Senha} placeholder="Senha" />
                 </div>
                 <a href="" className={styles.forgotPassword}>Esqueci minha senha</a>
-              
-            <button className={styles.BotaoEntrar}>ENTRAR</button>
-            <div className={styles.whiteBar}></div>
+            
+            <div className={styles.buttonEbar}>
+                <button className={styles.BotaoEntrar}>ENTRAR</button>
+                <div className={styles.whiteBar}></div>
+            </div>
+            
 
-            <Link className={styles.BotaoCadastro} to="cadastro">CADASTRE-SE</Link>
+            <Link className={styles.BotaoCadastro} to="/cadastro">CADASTRE-SE</Link>
             </div>
             
         </div>

@@ -23,7 +23,6 @@
     background-color: #74010B;
     width: 488px;
     height: 600px;
-    padding: 40px;
     justify-content: center;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.696);
@@ -73,18 +72,36 @@
     text-decoration: underline;
     color: var(--red-0);
 }
+.buttonEbar{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    padding-bottom: 48px;
+}
 
-.BotaoEntrar {
+.whiteBar{
+    width: 390px;
+    height: 2.2px;
+    background-color: var(--white);
+    border-radius: 2px;
+
+}
+.BotaoEntrar,
+.BotaoCadastro{
+    background-color: var(--red-300);
+
     display: flex;
     justify-content: center;
-    width: 80%;
-    max-width: 600px;
     justify-self: center;
-    padding: 15px 0;
-    font-size: 1.8rem;
     border-radius: 10px;
-    background-color: #A31621;
-    color: #ffffff;
+    box-shadow: hsla(0, 0%, 0%, 0.25);
+
+    font-family: var(--font-montserrat);
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 5%;
     border: none;
 
     &:hover{
@@ -92,24 +109,16 @@
         background-color: #b71a27;
     }
 }
+.BotaoEntrar { 
+    width: 390px;
+    height: 44px;
+    padding: 15px 0; 
+}
 
 .BotaoCadastro {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 80%;            
-    max-width: 600px;
-    justify-self: center;
-    font-size: 1.8rem;
-    border-radius: 10px;
-    background-color: #A31621;
-    color: #ffffff;
-    border: none;
+    width: 220px;       
+    height: 44px; 
+    margin-bottom: 61px;
     text-decoration: none;
-    text-align: center;
-
-    &:hover{
-        cursor: pointer;
-        background-color: #b71a27;
-    }
 }
